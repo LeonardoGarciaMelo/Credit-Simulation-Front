@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body {
+  margin: 0;
+  
+  font-family: 'Poppins', sans-serif;
+  
+/*
+  background-image: url('assets/images/background.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; */
+  
+  background-color: #111827;
+
+  color: #ffffff;
+}
