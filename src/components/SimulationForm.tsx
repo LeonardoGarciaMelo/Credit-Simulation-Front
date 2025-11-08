@@ -5,7 +5,7 @@
  * renderizar o formulário de entrada de simulação (valor e prazo).
  */
 import React, { useState } from "react";
-
+import * as S from '../styles/simulationFormStyles'
 /**
  * Define as propriedades (props) esperadas pelo componente `SimulationForm`.
  */
@@ -42,18 +42,18 @@ function SimulationForm({onSimular, loading}: SimulationFormProps) {
     };
 
     return (
-        <form className="simulation-form" onSubmit={handleSubmit}>
-            <div className="form-group">
+        <S.Form onSubmit={handleSubmit}>
+            <S.FormGroup>
                 <label htmlFor="valor">Valor Desejado</label>
-                <input
+                <input 
                     type="number"
                     id="valor"
                     value={valorDesejado}
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValorDesejado(e.target.value)}
                     required
                 />
-            </div>
-            <div className="form-group">
+            </S.FormGroup>
+            <S.FormGroup>
                 <label htmlFor="prazo">Prazo (em meses)</label>
                 <input
                     type="number"
@@ -62,11 +62,11 @@ function SimulationForm({onSimular, loading}: SimulationFormProps) {
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPrazo(e.target.value)}
                     required
                 />
-            </div>
-            <button type="submit" className="submit-btn" disabled={loading}>
+            </S.FormGroup>
+            <S.SubmitButton type="submit" disabled={loading}>
                 {loading ? 'Simulando...' : 'Simular'}
-            </button>
-        </form>
+            </S.SubmitButton>
+        </S.Form>
     )
 }
 
