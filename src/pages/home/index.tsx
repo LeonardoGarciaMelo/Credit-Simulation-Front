@@ -1,11 +1,9 @@
-// src/pages/Home/index.tsx
 import { FaCalculator, FaChartBar, FaListAlt } from 'react-icons/fa';
 import * as S from './styles';
 
 function Home() {
   return (
     <S.PageContainer>
-      {/* Background com gradiente e efeitos */}
       <S.Background>
         <S.LightEffect1 />
         <S.LightEffect2 />

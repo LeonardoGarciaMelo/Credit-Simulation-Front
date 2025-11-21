@@ -1,4 +1,3 @@
-// src/pages/Simulation/index.tsx
 import { useState } from "react";
 import { simulationService } from "../../services/simulationService";
 import SimulationForm from "../../components/SimulationForm";

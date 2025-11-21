@@ -1,8 +1,6 @@
-// src/pages/Home/styles.ts
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 
-// Animação de pulse para os efeitos de luz
 const pulse = keyframes`
   0%, 100% {
     opacity: 0.2;
@@ -12,7 +10,6 @@ const pulse = keyframes`
   }
 `;
 
-// Container principal da página
 export const PageContainer = styled.div`
   min-height: 100vh;
   width: 100vw;
@@ -24,14 +21,12 @@ export const PageContainer = styled.div`
   overflow: hidden;
 `;
 
-// Background com gradiente
 export const Background = styled.div`
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, #0f172a 0%, #312e81 50%, #0f172a 100%);
 `;
 
-// Efeitos de luz no fundo
 export const LightEffect1 = styled.div`
   position: absolute;
   top: 25%;
@@ -99,7 +94,6 @@ export const GlassContainer = styled.div`
   }
 `;
 
-// Header
 export const HomeHeader = styled.header`
   text-align: center;
   margin-bottom: 48px;
