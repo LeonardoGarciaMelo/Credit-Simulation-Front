@@ -1,4 +1,4 @@
-import { FaCalculator, FaChartBar, FaListAlt } from 'react-icons/fa';
+import { FaCalculator, FaChartBar, FaListAlt, FaChartLine } from 'react-icons/fa';
 import * as S from './styles';
 
 function Home() {
@@ -28,6 +28,11 @@ function Home() {
               <span>Ver Simulações</span>
             </S.GridItem>
 
+
+            <S.GridItem to ="/volume-diario">
+              <FaChartLine />
+              <span>Volume Diário</span>
+            </S.GridItem>
             <S.GridItem to="/dashboard">
               <FaChartBar />
               <span>Dashboard</span>

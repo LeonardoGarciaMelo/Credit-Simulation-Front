@@ -12,6 +12,7 @@ import { Route, Routes } from "react-router-dom"
 import Home from "./pages/home"
 import SimulationPage from "./pages/simulation"
 import SimulationsList from "./pages/simulationList"
+import DailyVolume from "./pages/dailyVolume"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/simular" element={<SimulationPage/>}/>
       <Route path="/simulacoes" element={<SimulationsList/>}/>
+      <Route path="/volume-diario" element={<DailyVolume/>}/>
     </Routes>
   )
 }
