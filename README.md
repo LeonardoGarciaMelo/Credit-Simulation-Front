@@ -18,7 +18,7 @@ Development focused on creating reusable components, strict typing for developme
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Core:** React 18 (Hooks, Context API)
 * **Language:** TypeScript (Strict Mode enabled)
